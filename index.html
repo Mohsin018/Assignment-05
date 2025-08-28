@@ -32,11 +32,11 @@
             </div>
 
             <div>
-                <button class="btn bg-[#41ff6b1a]  rounded-full w-[123] h-[52]"><span>0</span>
+                <button class="btn bg-[#41ff6b1a]  rounded-full w-[123] h-[52]"><span id="heart-counter">0</span>
                 <img class="w-[20px] h-[20px]" src="assets/heart.png" alt="">
                 </button>
 
-                <button class="btn bg-[#41ff6b1a] rounded-full w-[123] h-[52]"><span>100</span>
+                <button class="btn bg-[#41ff6b1a] rounded-full w-[123] h-[52]"><span id="coin-counter">100</span>
                 <img class="w-[20px] h-[20px]" src="assets/coin.png" alt="">
                 </button>
 
@@ -74,24 +74,24 @@
                         <img class="h-[32px] w-[32px]" src="assets/emergency.png" alt="Emergency">
                     </div>
 
-                    <i class="fa-regular fa-heart text-2xl text-gray-500"></i>
+                    <i class="fa-regular fa-heart text-2xl text-gray-500 cursor-pointer heart"></i>
                     </div>
                     
                     <div class="mt-4">
-                    <h2 class="font-bold text-2xl hind-madurai-light">National Emergency Number</h2>
-                    <p class="font-normal text-lg hind-madurai-light">National Emergency</p>
+                    <h2 id="service-name" class="font-bold text-2xl hind-madurai-light">National Emergency Number</h2>
+                    <p  class="font-normal text-lg hind-madurai-light">National Emergency</p>
                     </div>
 
                     <div class="mt-6">
 
-                    <h2 class="font-bold text-3xl hind-madurai-light">999</h2>
+                    <h2 id="service-number" class="font-bold text-3xl hind-madurai-light">999</h2>
                     <button class="btn btn-active rounded-full hind-madurai-light">All</button>
 
                     </div>
 
                     <div class="mt-6 flex flex-row gap-x-4 w-full">
                         <button class="btn h-[40px] w-1/2 rounded-lg"><i class="fa-regular fa-copy"></i>Copy</button>
-                        <button class="btn btn-active h-[40px] w-1/2 bg-[#00a63e] rounded-lg text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                        <button id="call-btn" class="btn btn-active h-[40px] w-1/2 bg-[#00a63e] rounded-lg text-white"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
 
                 </div>
@@ -100,22 +100,22 @@
 
                 <div class="h-auto w-auto p-8 bg-white shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] rounded-xl">
                 <div class="flex items-center justify-between">
-                    <div class="w-fit p-3 bg-[#fce8e8] rounded-xl flex items-center justify-center">
-                        <img class="h-[32px] w-[32px]" src="assets/emergency.png" alt="Emergency">
+                    <div class="w-fit p-3 bg-[#e6efff] rounded-xl flex items-center justify-center">
+                        <img class="h-[32px] w-[32px]" src="assets/police.png" alt="Emergency">
                     </div>
 
-                    <i class="fa-regular fa-heart text-2xl text-gray-500"></i>
+                    <i class="fa-regular fa-heart text-2xl text-gray-500 cursor-pointer heart"></i>
                     </div>
                     
                     <div class="mt-4">
-                    <h2 class="font-bold text-2xl hind-madurai-light">National Emergency Number</h2>
-                    <p class="font-normal text-lg hind-madurai-light">National Emergency</p>
+                    <h2 class="font-bold text-2xl hind-madurai-light">Police Helpline Number</h2>
+                    <p class="font-normal text-lg hind-madurai-light">Police</p>
                     </div>
 
                     <div class="mt-6">
 
                     <h2 class="font-bold text-3xl hind-madurai-light">999</h2>
-                    <button class="btn btn-active rounded-full hind-madurai-light">All</button>
+                    <button class="btn btn-active rounded-full hind-madurai-light">Police</button>
 
                     </div>
 
@@ -131,21 +131,21 @@
                 <div class="h-auto w-auto p-8 bg-white shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] rounded-xl">
                 <div class="flex items-center justify-between">
                     <div class="w-fit p-3 bg-[#fce8e8] rounded-xl flex items-center justify-center">
-                        <img class="h-[32px] w-[32px]" src="assets/emergency.png" alt="Emergency">
+                        <img class="h-[32px] w-[32px]" src="assets/ambulance.png" alt="Emergency">
                     </div>
 
-                    <i class="fa-regular fa-heart text-2xl text-gray-500"></i>
+                    <i class="fa-regular fa-heart text-2xl text-gray-500 cursor-pointer heart"></i>
                     </div>
                     
                     <div class="mt-4">
-                    <h2 class="font-bold text-2xl hind-madurai-light">National Emergency Number</h2>
-                    <p class="font-normal text-lg hind-madurai-light">National Emergency</p>
+                    <h2 class="font-bold text-2xl hind-madurai-light">Fire Service Number</h2>
+                    <p class="font-normal text-lg hind-madurai-light">Fire Service</p>
                     </div>
 
                     <div class="mt-6">
 
                     <h2 class="font-bold text-3xl hind-madurai-light">999</h2>
-                    <button class="btn btn-active rounded-full hind-madurai-light">All</button>
+                    <button class="btn btn-active rounded-full hind-madurai-light">Fire</button>
 
                     </div>
 
@@ -164,21 +164,21 @@
                 <div class="h-auto w-auto p-8 bg-white shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] rounded-xl">
                 <div class="flex items-center justify-between">
                     <div class="w-fit p-3 bg-[#fce8e8] rounded-xl flex items-center justify-center">
-                        <img class="h-[32px] w-[32px]" src="assets/emergency.png" alt="Emergency">
+                        <img class="h-[32px] w-[32px]" src="assets/ambulance.png" alt="Emergency">
                     </div>
 
-                    <i class="fa-regular fa-heart text-2xl text-gray-500"></i>
+                    <i class="fa-regular fa-heart text-2xl text-gray-500 cursor-pointer heart"></i>
                     </div>
                     
                     <div class="mt-4">
-                    <h2 class="font-bold text-2xl hind-madurai-light">National Emergency Number</h2>
-                    <p class="font-normal text-lg hind-madurai-light">National Emergency</p>
+                    <h2 class="font-bold text-2xl hind-madurai-light">Ambulance Service</h2>
+                    <p class="font-normal text-lg hind-madurai-light">Ambulance</p>
                     </div>
 
                     <div class="mt-6">
 
-                    <h2 class="font-bold text-3xl hind-madurai-light">999</h2>
-                    <button class="btn btn-active rounded-full hind-madurai-light">All</button>
+                    <h2 class="font-bold text-3xl hind-madurai-light">1994-999999</h2>
+                    <button class="btn btn-active rounded-full hind-madurai-light">Health</button>
 
                     </div>
 
@@ -197,18 +197,18 @@
                         <img class="h-[32px] w-[32px]" src="assets/emergency.png" alt="Emergency">
                     </div>
 
-                    <i class="fa-regular fa-heart text-2xl text-gray-500"></i>
+                    <i class="fa-regular fa-heart text-2xl text-gray-500 cursor-pointer heart"></i>
                     </div>
                     
                     <div class="mt-4">
-                    <h2 class="font-bold text-2xl hind-madurai-light">National Emergency Number</h2>
-                    <p class="font-normal text-lg hind-madurai-light">National Emergency</p>
+                    <h2 class="font-bold text-2xl hind-madurai-light">Women & Child Helpline</h2>
+                    <p class="font-normal text-lg hind-madurai-light">Women & Child Helpline</p>
                     </div>
 
                     <div class="mt-6">
 
-                    <h2 class="font-bold text-3xl hind-madurai-light">999</h2>
-                    <button class="btn btn-active rounded-full hind-madurai-light">All</button>
+                    <h2 class="font-bold text-3xl hind-madurai-light">109</h2>
+                    <button class="btn btn-active rounded-full hind-madurai-light">Help</button>
 
                     </div>
 
@@ -227,18 +227,18 @@
                         <img class="h-[32px] w-[32px]" src="assets/emergency.png" alt="Emergency">
                     </div>
 
-                    <i class="fa-regular fa-heart text-2xl text-gray-500"></i>
+                    <i class="fa-regular fa-heart text-2xl text-gray-500 cursor-pointer heart"></i>
                     </div>
                     
                     <div class="mt-4">
-                    <h2 class="font-bold text-2xl hind-madurai-light">National Emergency Number</h2>
-                    <p class="font-normal text-lg hind-madurai-light">National Emergency</p>
+                    <h2 class="font-bold text-2xl hind-madurai-light">Anti-Corruption Helpline</h2>
+                    <p class="font-normal text-lg hind-madurai-light">Anti-Corruption</p>
                     </div>
 
                     <div class="mt-6">
 
-                    <h2 class="font-bold text-3xl hind-madurai-light">999</h2>
-                    <button class="btn btn-active rounded-full hind-madurai-light">All</button>
+                    <h2 class="font-bold text-3xl hind-madurai-light">106</h2>
+                    <button class="btn btn-active rounded-full hind-madurai-light">Govt.</button>
 
                     </div>
 
@@ -256,18 +256,18 @@
                         <img class="h-[32px] w-[32px]" src="assets/emergency.png" alt="Emergency">
                     </div>
 
-                    <i class="fa-regular fa-heart text-2xl text-gray-500"></i>
+                    <i class="fa-regular fa-heart text-2xl text-gray-500 cursor-pointer heart"></i>
                     </div>
                     
                     <div class="mt-4">
-                    <h2 class="font-bold text-2xl hind-madurai-light">National Emergency Number</h2>
-                    <p class="font-normal text-lg hind-madurai-light">National Emergency</p>
+                    <h2 class="font-bold text-2xl hind-madurai-light">Electricity Helpline</h2>
+                    <p class="font-normal text-lg hind-madurai-light">Electricity Outage</p>
                     </div>
 
                     <div class="mt-6">
 
-                    <h2 class="font-bold text-3xl hind-madurai-light">999</h2>
-                    <button class="btn btn-active rounded-full hind-madurai-light">All</button>
+                    <h2 class="font-bold text-3xl hind-madurai-light">16216</h2>
+                    <button class="btn btn-active rounded-full hind-madurai-light">Electricity</button>
 
                     </div>
 
@@ -286,18 +286,18 @@
                         <img class="h-[32px] w-[32px]" src="assets/emergency.png" alt="Emergency">
                     </div>
 
-                    <i class="fa-regular fa-heart text-2xl text-gray-500"></i>
+                    <i class="fa-regular fa-heart text-2xl text-gray-500 cursor-pointer heart"></i>
                     </div>
                     
                     <div class="mt-4">
-                    <h2 class="font-bold text-2xl hind-madurai-light">National Emergency Number</h2>
-                    <p class="font-normal text-lg hind-madurai-light">National Emergency</p>
+                    <h2 class="font-bold text-2xl hind-madurai-light">Brac Helpline</h2>
+                    <p class="font-normal text-lg hind-madurai-light">Brac</p>
                     </div>
 
                     <div class="mt-6">
 
-                    <h2 class="font-bold text-3xl hind-madurai-light">999</h2>
-                    <button class="btn btn-active rounded-full hind-madurai-light">All</button>
+                    <h2 class="font-bold text-3xl hind-madurai-light">16445</h2>
+                    <button class="btn btn-active rounded-full hind-madurai-light">NGO</button>
 
                     </div>
 
@@ -316,18 +316,18 @@
                         <img class="h-[32px] w-[32px]" src="assets/emergency.png" alt="Emergency">
                     </div>
 
-                    <i class="fa-regular fa-heart text-2xl text-gray-500"></i>
+                    <i class="fa-regular fa-heart text-2xl text-gray-500 cursor-pointer heart"></i>
                     </div>
                     
                     <div class="mt-4">
-                    <h2 class="font-bold text-2xl hind-madurai-light">National Emergency Number</h2>
-                    <p class="font-normal text-lg hind-madurai-light">National Emergency</p>
+                    <h2 class="font-bold text-2xl hind-madurai-light">Bangladesh Railway Helpline</h2>
+                    <p class="font-normal text-lg hind-madurai-light">Bangladesh Railway</p>
                     </div>
 
                     <div class="mt-6">
 
-                    <h2 class="font-bold text-3xl hind-madurai-light">999</h2>
-                    <button class="btn btn-active rounded-full hind-madurai-light">All</button>
+                    <h2 class="font-bold text-3xl hind-madurai-light">163</h2>
+                    <button class="btn btn-active rounded-full hind-madurai-light">Travel</button>
 
                     </div>
 
@@ -343,23 +343,25 @@
 
 
             <!-- main part right portion -->
-            <div class="border-2 border-red-600 w-[400px] p-6">
+            <div class="border-2 border-red-600 w-[400px] p-6 bg-white shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]">
                 <div class=" bg-white flex justify-between h-[50px] items-center border-2 border-purple-900">
                 <div class="flex gap-1 border-2 border-e-black items-center">
                     <i class="fa-regular fa-clock"></i>
-                    <h2>Call History</h2>
+                    <h2 class="font-semibold text-xl">Call History</h2>
 
                 </div>
 
                 <div class="border-2 border-blue-800">
 
-                <button class="btn rounded-full w-[123] h-[52] bg-[#00a63e] text-white">Clear</button>
+                <button id="clear-history"  class="btn rounded-full w-[123] h-[52] bg-[#00a63e] text-white">Clear</button>
                 
                 </div>
+
+                
                 </div>
         
 
-
+                <ul id="call-history" class="p-2"></ul>
             </div>
 
         </section>
