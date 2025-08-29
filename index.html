@@ -40,7 +40,7 @@
                 <img class="w-[20px] h-[20px]" src="assets/coin.png" alt="">
                 </button>
 
-                <button class="btn rounded-full w-[123] h-[52] bg-[#00a63e] text-white"><span>0</span>
+                <button class="btn rounded-full w-[123] h-[52] bg-[#00a63e] text-white"><span id="copy-counter">0</span>
                 <p>Copy</p>
                 </button>
 
@@ -62,13 +62,13 @@
 
             <!-- Main part left portion -->
 
-            <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] flex-1">
+            <div id="heart-parent" class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] flex-1">
 
                 <!-- CARD START HERE -->
 
                 <!-- C1 -->
 
-                <div class="h-auto w-auto p-8 bg-white shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] rounded-xl">
+                <div class="h-auto w-auto p-8 bg-white shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] rounded-xl card">
                 <div class="flex items-center justify-between">
                     <div class="w-fit p-3 bg-[#fce8e8] rounded-xl flex items-center justify-center">
                         <img class="h-[32px] w-[32px]" src="assets/emergency.png" alt="Emergency">
@@ -84,13 +84,13 @@
 
                     <div class="mt-6">
 
-                    <h2 id="service-number" class="font-bold text-3xl hind-madurai-light">999</h2>
+                    <h2 id="service-number" class="font-bold text-3xl hind-madurai-light hotline-number">999</h2>
                     <button class="btn btn-active rounded-full hind-madurai-light">All</button>
 
                     </div>
 
                     <div class="mt-6 flex flex-row gap-x-4 w-full">
-                        <button class="btn h-[40px] w-1/2 rounded-lg"><i class="fa-regular fa-copy"></i>Copy</button>
+                        <button class="btn h-[40px] w-1/2 rounded-lg copy-btn"><i class="fa-regular fa-copy"></i>Copy</button>
                         <button id="call-btn" class="btn btn-active h-[40px] w-1/2 bg-[#00a63e] rounded-lg text-white"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
 
