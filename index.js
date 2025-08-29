@@ -71,7 +71,7 @@ callBtns.forEach(function(callBtn){
     coinCounter.innerText = coins - 20;
 
 
-    alert("Calling " + serviceName + " at " + serviceNumber);
+    alert("📞 Calling " + serviceName + " at " + serviceNumber);
 
     let li = document.createElement("li");
 
